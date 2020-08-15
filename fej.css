@@ -226,8 +226,8 @@ section#wed-location .location-bottom {
 /* End of Wed-Location Ruleset */
 
 /* Map Ruleset */
-section#map{
-    background-color: var(--pri-color);  
+section#map{ 
+    overflow-x: scroll;
 }
 #map .map{ 
 }
