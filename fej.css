@@ -91,7 +91,7 @@ a{
         content: 'Fejiro & Ruky';
         position: absolute;
         top: -15px;
-        left: 80px;  
+        left: 110px;  
         width: 180px;
         height: 30px;
         background-color: var(--pri-color); 
@@ -110,23 +110,29 @@ a{
 
 /* Couple Ruleset */ 
     
-    section#couple .loveadd{
+section#couple .couple .couple-top{
+    padding: 0 2em;
+}    
+section#couple .loveadd{
         width: 50%;
         height: 30px;
         margin: .7em auto 7em; 
     }
     #couple .couple-bottom{
-        margin: 5em 0;
-    }
+        margin: 5em 0; 
+}
     .groom, .bride{
-        width: 75%;
-        height: 40vh;
+        width: 72%; 
         background-color: #fff;
         margin: 2em auto;
-        padding: 7em .7em 0em;
-        border-radius: 4px;
+        padding: 4em 4em 0em; 
+        border-bottom-left-radius: 45px; 
         box-shadow: 0px 5px 10px #767; 
         position: relative;
+    }
+    .bride{
+        border-radius: 0px;
+        border-bottom-right-radius: 45px;  
     }
     #couple .dp{ 
         background: url(./img/groomdpp.jpeg) no-repeat center;
@@ -136,8 +142,8 @@ a{
         border-radius: 50%;
         border: 1px solid var(--pri-color);   
         position: absolute;
-        top: -70px;
-        left: 72px; 
+        top: -60px; 
+        right: 45vw;
     }
     #couple .dp::before{ 
         position: absolute;
@@ -154,6 +160,7 @@ a{
     #couple .bride .dp{
         background: url(./img/brideddp.jpeg) no-repeat center;
         background-size: cover;
+        left: 45vw;
     }
     #couple .profile{ 
         height: 100%;
@@ -183,9 +190,12 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 3em;
     }    
     section#wedding .wedding-bottom{
-        justify-content: space-evenly;
+        justify-content: space-between;
+        min-height: 96vh;
+        margin: 3em; 
     }
     #wedding .schedule h1{
         margin-bottom: .3em;
