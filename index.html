@@ -7,7 +7,7 @@
     <meta property="og:description" content="Upcoming Traditional Marriage Ceremony" >
     <meta property="og:image:secure_url" content="https://feruk2020.github.io/thumbnail.png" >
     <meta property="og:url" content="https://feruk2020.github.io/index.html  " >
-    <title>Fejiro|Ruky</title>
+    <title>Fejiro | Ruky</title>
     <link rel="stylesheet" href="fej.css"> 
     <link rel="stylesheet" href="./assets/css/all.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
@@ -189,4 +189,22 @@
     <!-- End of Map -->
     
 </body>
+<script>
+    function createBubble(){
+        const hero = document.getElementById('hero')
+        const createElement = document.createElement('span')
+        var size = Math.random() * 50;
+
+        createElement.style.width = 10 + size + 'px';
+        createElement.style.height = 10 + size + 'px';
+        createElement.style.left = Math.random() * innerWidth + 'px';
+        hero.appendChild(createElement); 
+
+        setTimeout(() =>{
+            createElement.remove()
+        }, 500000)
+    }
+
+    setInterval(createBubble, 240)
+</script>
 </html>
