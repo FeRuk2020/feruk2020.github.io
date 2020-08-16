@@ -11,6 +11,7 @@
 html{
     font-size: 12px;
     font-family: 'Baloo Tamma 2', cursive;
+    scroll-behavior: smooth;
 }
 .container{
     max-width: 90%;
@@ -63,6 +64,93 @@ a{
  }
 /* End of General Declarations */
 
+/* Header Declarations */
+    header{
+        padding: .5em 1.5em;  
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .nametag{
+        width: 180px;
+    }
+    header ul{
+        list-style: none; 
+        /* position: absolute; */
+        z-index: 2;
+    }
+
+    .menu{
+        padding: 0.5em .5em 0 0;
+        cursor: pointer;
+    } 
+    .burger{
+       width: 30px;
+       height: 4px;
+       background-color: #fff;  
+       background-color: var(--pri-color);
+       margin-bottom: 4.5px;
+       border-radius: 5px;
+       transition: .45s ease-in-out; 
+    }
+
+    .shift{ 
+        right: 0;
+        opacity: 1;
+    }
+    .spin .burger:nth-of-type(1){
+        transform: rotate(45deg) translate(5px, 5px);
+        box-shadow: 2px 2px 5px var(--goldrodpigment);
+    }
+    .spin .burger:nth-of-type(2){
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+    .spin .burger:nth-of-type(3){
+        transform: rotate(-45deg) translate(7px, -7px);
+        box-shadow: 2px 2px 5px dodgerblue; 
+    }
+
+    nav ul{ 
+        position: fixed;  
+        top: 4.1em;
+        width: 15.5em; 
+        right: -14.5em;   
+        opacity: 0; 
+        background-color: var(--pri-color);
+        height: 52%;  
+        padding-top: 1.2em;
+        list-style: none;    
+        border-top-left-radius: 15px; 
+        border-bottom-left-radius: 15px; 
+        box-shadow: 4px 4.5px 8px rgba(0, 0, 0, 0.75);
+        transition: .45s ease-in-out;
+    } 
+    nav ul li{ 
+        height: 3em; 
+        text-align: left; 
+        line-height: 2.5; 
+        cursor: pointer; 
+        padding-left: .8em; 
+        margin-bottom: 1em;
+        font-size: 1.2rem; 
+    } 
+    nav ul li:hover{  
+        border-right: 5px solid #fff;
+    }
+    nav ul li:hover a{
+        color: #00348d; 
+    }
+    nav ul li a{ 
+        text-decoration: none; 
+        font-weight: bold; 
+        color: #fff;
+        display: inline-block;
+        width: 100%;
+    }  
+
+/* End of Header Declarations */
+
 /* Hero Ruleset */
     section#hero{
         background: url(./img/heroimg.jpeg) no-repeat center; 
@@ -75,7 +163,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-
+        overflow: hidden;
 
     }
     #hero > span{
@@ -86,7 +174,7 @@ a{
 
         pointer-events: none;
         box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5) ;
-        animation: fly 4s linear infinite;
+        animation: fly 10s linear infinite;
     }
     #hero > span::before{
         content: '';
@@ -155,11 +243,12 @@ section#couple .loveadd{
         width: 72%; 
         background-color: #fff;
         margin: 2em auto;
-        padding: 4em 4em 0em; 
+        padding: 4em 2.5em 0em; 
         border-bottom-left-radius: 45px; 
         box-shadow: 0px 5px 10px #767; 
         position: relative;
     }
+    
     .bride{
         border-radius: 0px;
         border-bottom-right-radius: 45px;  

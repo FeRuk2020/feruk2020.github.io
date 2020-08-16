@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="FeRuk 2020" >
     <meta property="og:description" content="Upcoming Traditional Marriage Ceremony" >
-    <meta property="og:image:secure_url" content="https://feruk2020.github.io/thumbnail.png" >
+    <meta property="og:image:secure_url" itemprop="image" content="https://feruk2020.github.io/thumbnail.png" >
     <meta property="og:url" content="https://feruk2020.github.io/index.html  " >
     <title>Fejiro | Ruky</title>
     <link rel="stylesheet" href="fej.css"> 
@@ -15,6 +15,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <header id="header">  
+        <img class="nametag" src="./img/Fejiro Logo Green.png" alt="NameTag">
+        <nav> 
+           <ul class="nav-list">
+            <li><a href="#header"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#couple"><i class="fa fa-id-card"></i>Meet Couple</a></li>
+            <li><a href="#wedding"><i class="fa fa-skating"></i>Wedding Schedule</a></li>
+            <li><a href="#wed-location"><i class="fa fa-people-arrows"></i>Event Location</a></li>
+            <li><a href="#map"><i class="fa fa-umbrella-beach"></i>Directions</a></li>
+           </ul> 
+        </nav>
+        <div class="menu" >
+            <div class="burger"></div> 
+            <div class="burger"></div> 
+            <div class="burger"></div> 
+        </div> 
+    </header>
     <!-- Hero Section --> 
     <section id="hero">
         <div class="hero container">
@@ -72,7 +89,7 @@
                         <h3>The Bride</h3>
                         <h1><span>Fejiro Gbuje</span></h1>
                         <p>
-                         Decent young lady with a heart of gold. So attractive she can spin the necks of admirers. <br> She rather choses to focus on her virtues than her beauty. 
+                         Decent young lady with a heart of gold.  
                         </p>
                         <div class="social-media">
                             <a href="#">
@@ -103,7 +120,7 @@
                     <span><i class="fa fa-heart"></i></span>
                 </div>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolore dolorum possimus fugit iure neque quaerat beatae, quas quisquam omnis.
+                    Organized by a certified african wedding planner, the trad marriage ceremony of this cute couple is set on a timeline as captured beneath. Sequence of activities range from Intro to Court then traditional rites and pumping up to a feast you don't want to miss.
                 </p>
             </div> 
         <div class="trad-background"></div>
@@ -159,7 +176,9 @@
                     <span><i class="fa fa-heart"></i></span>
                 </div>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore excepturi quaerat amet consequatur debitis maxime saepe reiciendis ipsum voluptatum facere ullam sequi alias similique dolores autem, sit nam harum atque nesciunt mollitia beatae repudiandae. Modi, quisquam? Necessitatibus magni, odio facere earum, sit asperiores veniam rerum ducimus esse, molestias nihil?
+                    Everything going as planned, the event stage is set in the heart of the Niger Delta right in the compound of Chief Gbuje himself. <br><br> 
+                    For guide on how to locate the venue or directions on getting there, either call the number below, or chat up by tapping the whatsapp link. <br> <br>
+                    You may also use the Google Map to navigate from wherever you are. 
                 </p>
             </div>
             <div class="location-bottom">
@@ -202,9 +221,10 @@
 
         setTimeout(() =>{
             createElement.remove()
-        }, 500000)
+        }, 100000)
     }
 
-    setInterval(createBubble, 1000)
+    setInterval(createBubble, 3000)
 </script>
+    <script src="fej.js"></script>
 </html>
