@@ -160,7 +160,7 @@ a{
         position: relative;
         z-index: 1;  
         width: 100%;
-        height: calc(100vh - 6vh);  
+        height: 92vh;  
         display: flex;
         justify-content: center;
         align-items: center;
