@@ -1,7 +1,7 @@
 /* General Declarations */
 :root{
     --pri-color: #0E9594;
-    --grey-bg: #DBD8F0;
+    --grey-bg: #DBD8F055;
 }
 *{
     margin: 0;
@@ -24,8 +24,9 @@ html{
     text-align: center;
 }
 .section-title{
-    font-size: 2rem;
+    font-size: 1.56rem;
     margin-top: 2em; 
+    text-align: center;
 }
 span{
     color: var(--pri-color);
@@ -52,7 +53,7 @@ a{
 .love-symbol{
     width: 50%;
     height: 20px;
-    margin: 1em auto; 
+    margin: .34em auto 1.1em; 
     display: flex;
     justify-content: center;
  } 
@@ -202,14 +203,15 @@ a{
         border: 1px solid #fff;
         border-radius: 5px;
         padding: 25px;
+        width: 330px; 
         text-align: center;
         position: relative;
     }
     #hero .hero > div::before{
-        content: 'Fejiro & Ruky';
+        content: 'Feji & Ruky';
         position: absolute;
-        top: -15px;
-        left: 110px;  
+        top: -8.5%;
+        left: 23%;  
         width: 180px;
         height: 30px;
         background-color: var(--pri-color); 
@@ -243,26 +245,36 @@ section#couple .loveadd{
         width: 72%; 
         background-color: #fff;
         margin: 2em auto;
-        padding: 4em 2.5em 0em; 
+        padding: 75px 20px 0em; 
+        border-radius: 2px;
         border-bottom-left-radius: 45px; 
         box-shadow: 0px 5px 10px #767; 
         position: relative;
     }
     
-    .bride{
-        border-radius: 0px;
-        border-bottom-right-radius: 45px;  
+    #couple .bride{
+        border-radius: 2px;
+        border-bottom-right-radius: 45px;    
     }
-    #couple .dp{ 
-        background: url(./img/groomdpp.jpeg) no-repeat center;
+    .groom .dp{ 
+        background: url(./img/groomdp.jpeg) no-repeat center;
         background-size: cover;
         width: 145px;
         height: 145px;
-        border-radius: 50%;
-        border: 1px solid var(--pri-color);   
+        border-radius: 50%;  
         position: absolute;
         top: -60px; 
-        right: 45vw;
+        left: -25px;  
+    } 
+    .bride .dp{ 
+        background: url(./img/brideddp.jpeg) no-repeat center;
+        background-size: cover;
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;  
+        position: absolute;
+        top: -60px;  
+        right: -25px;
     }
     #couple .dp::before{ 
         position: absolute;
@@ -273,14 +285,7 @@ section#couple .loveadd{
         bottom: -5px;
         border: 7px solid #fff;
         border-radius: 50%;
-    }
-    #couple .groom .dp{ 
-    }
-    #couple .bride .dp{
-        background: url(./img/brideddp.jpeg) no-repeat center;
-        background-size: cover;
-        left: 45vw;
-    }
+    } 
     #couple .profile{ 
         height: 100%;
         display: flex; 
@@ -353,27 +358,42 @@ section#couple .loveadd{
 /* Wed-Location Ruleset */
 section#wed-location{
     background-color: var(--grey-bg); 
+    padding: 0 1.5em;
 }
 section#wed-location .wed-location{
-    justify-content: space-around; 
-    min-height: auto;
+    justify-content: space-around;  
     padding-bottom: 4em;
 }
 section#wed-location .location-bottom {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 40vh;
+    width: 100%;  
     justify-content: space-between;
     margin: 4em 0 0;
+    min-height: 300px;
 }
 #wed-location .location-bottom > div{
     border: 1px solid var(--pri-color); 
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 1.2em 0;
 }
 .location-bottom > div h1{
     margin-bottom: .5em;
+}
+#wed-location .location-bottom .whatsapp a{
+    display: inline-block;
+    background-color: var(--pri-color);
+    padding: 5px 20px 7px;
+    border-radius: 20px; 
+    color: #fff;
+}
+#wed-location .location-bottom .whatsapp a:first-of-type{
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+#wed-location .location-bottom .whatsapp a:last-of-type{
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
 }
 
 /* End of Wed-Location Ruleset */
