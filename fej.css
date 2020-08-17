@@ -73,11 +73,10 @@ a{
         align-items: center; 
     }
     .nametag{
-        width: 180px;
+        width: 150px;
     }
     header ul{
-        list-style: none; 
-        /* position: absolute; */
+        list-style: none;  
         z-index: 2;
     }
 
@@ -383,7 +382,7 @@ section#wed-location .location-bottom {
 #wed-location .location-bottom .whatsapp a{
     display: inline-block;
     background-color: var(--pri-color);
-    padding: 5px 20px 7px;
+    padding: 5px 20px;
     border-radius: 20px; 
     color: #fff;
 }
