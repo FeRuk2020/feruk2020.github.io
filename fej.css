@@ -2,6 +2,7 @@
 :root{
     --pri-color: #0E9594;
     --grey-bg: #DBD8F055;
+    --footer-bg: #140047;
 }
 *{
     margin: 0;
@@ -71,7 +72,7 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        height: 6.9vh;
+        height: 5.5vh;
     }
     .nametag{
         width: 150px;
@@ -159,7 +160,7 @@ a{
         position: relative;
         z-index: 1;  
         width: 100%;
-        height: calc(100vh - 6.9vh); 
+        height: calc(100vh - 6vh);  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -404,6 +405,41 @@ section#map{
 }
 /* End of Map Ruleset */
 
+/* Footer */
+    footer{
+        height: 15vh;
+        background-color: var(--footer-bg);
+        color: #fff;
+        display: grid; 
+        grid-template-columns: 1fr 2.5fr 1fr; 
+        padding: 1em;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--pri-color); 
+        letter-spacing: .1rem;
+    } 
+    footer p{
+        font-size: .75rem;
+        color: #f0295075;
+    }
+    footer .emblem > div{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .gift-heart{
+        height: 70%;
+    }
+    footer .powered{
+        height: 30%;
+    }
+    footer .gift-heart span:first-of-type img{
+        width: 60px;
+        height: 40px;
+    }
+/* End of Footer */
 
 
 
