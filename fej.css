@@ -115,7 +115,7 @@ a{
 
     nav ul{ 
         position: fixed;  
-        top: 4.1em;
+        top: 6vh;
         width: 15.5em; 
         right: -14.5em;   
         opacity: 0; 
@@ -326,8 +326,8 @@ section#couple .loveadd{
         width: 100%;
         height: 45vh;
         background: url(./img/tradbgimg.jpeg) no-repeat top center;
-        background-size: cover;
-        /* background-attachment: fixed; */
+        background-size: cover; 
+
     }
     section#wedding .wedding-top{ 
         display: flex;
@@ -356,28 +356,62 @@ section#couple .loveadd{
 
 /* Wed-Location Ruleset */
 section#wed-location{
-    background-color: var(--grey-bg); 
-    padding: 0 1.5em;
+    background-color: var(--grey-bg);  
+    /* border: 1px solid salmon; */
 }
-section#wed-location .wed-location{
-    justify-content: space-around;  
-    padding-bottom: 4em;
+#wed-location .location-top{ 
+    padding: 2em;
+}
+section#wed-location .wed-location{ 
+    padding-bottom: 1em;
+    text-align: center;
 }
 section#wed-location .location-bottom {
+    background: url(./img/cake.jpg) no-repeat center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100%;  
-    justify-content: space-between;
-    margin: 4em 0 0;
-    min-height: 300px;
+    justify-content: space-between; 
+    min-height: 400px; 
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    background-attachment: fixed; 
 }
-#wed-location .location-bottom > div{
-    border: 1px solid var(--pri-color); 
+section#wed-location .location-bottom::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .69;
+    z-index: -1;
+}
+#wed-location .location-bottom > div{ 
     border-radius: 4px;
     padding: 1.2em 0;
 }
 .location-bottom > div h1{
     margin-bottom: .5em;
+}
+.location-bottom .rsvp-contact{ 
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto;
+}
+.rsvp-contact .contact{
+    border: 2px inset var(--pri-color); 
+    padding: .2em .7em;
+    border-radius: 3px;
+}
+.contact p:last-of-type{
+    font-weight: bold;
 }
 #wed-location .location-bottom .whatsapp a{
     display: inline-block;
@@ -394,6 +428,15 @@ section#wed-location .location-bottom {
     border-top-left-radius: unset;
     border-bottom-left-radius: unset;
 }
+#wed-location .map-guide{
+    margin-top: 2.5em;
+}
+.caret i{
+    color: var(--pri-color);
+    font-size: 2.5rem; 
+    animation: maps .88s ease-in-out infinite;
+}
+
 
 /* End of Wed-Location Ruleset */
 
@@ -408,20 +451,20 @@ section#map{
 /* Footer */
     footer{
         height: 15vh;
-        background-color: var(--footer-bg);
-        color: #fff;
+        background-color: var(--footer-bg); 
         display: grid; 
         grid-template-columns: 1fr 2.5fr 1fr; 
         padding: 1em;
+        color: rgba(157, 241, 237, 0.418);
     }
     footer a{
-        text-decoration: none;
-        color: var(--pri-color); 
-        letter-spacing: .1rem;
+        text-decoration: none; 
+        letter-spacing: .1rem; 
+        color: rgba(157, 241, 237, 0.418);
+        font-weight: 600;
     } 
     footer p{
-        font-size: .75rem;
-        color: #f0295075;
+        font-size: .75rem; 
     }
     footer .emblem > div{  
         display: flex;
@@ -438,6 +481,38 @@ section#map{
     footer .gift-heart span:first-of-type img{
         width: 60px;
         height: 40px;
+    }
+    footer .gift-heart span:nth-of-type(2) img{
+        width: 120px;
+        height: 20px;
+    }
+    footer .rsvp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .rsvp p{
+        color: #fff; 
+        font-weight: bold;
+        font-size: 1.1rem;
+        letter-spacing: .2rem; 
+        padding: .2em 1em;
+        border-radius: 15px;
+        border: 1.5px solid #fff; 
+
+    }
+    footer .scrollup{
+        padding-left: 1em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    footer .scrollup i{
+        border: 1.5px solid #fff;
+        padding: 10px;
+        border-radius: 50%;
+        color: #fff;
+        animation: mapss 1s ease-in alternate infinite;
     }
 /* End of Footer */
 
@@ -465,6 +540,22 @@ section#map{
     100%{
         transform: translateY(-1200%);
         opacity: 0;
+    }
+}
+@keyframes maps{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+@keyframes mapss{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(-10px);
     }
 }
 /* End of Animation KeyFrames */
