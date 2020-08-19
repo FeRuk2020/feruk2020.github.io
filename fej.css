@@ -409,7 +409,7 @@ section#wed-location .location-bottom::before{
 .rsvp-contact .contact{
     border: 2px inset var(--pri-color); 
     padding: .2em .7em;
-    border-radius: 3px;
+    border-radius: 3px; 
 }
 p.color{
     margin-top: 1em; 
