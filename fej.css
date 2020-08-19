@@ -403,7 +403,7 @@ section#wed-location .location-bottom::before{
 .location-bottom .rsvp-contact{ 
     display: flex;
     justify-content: space-between;
-    width: 99%;
+    width: 98%;
     margin: 0 auto;
 }
 .rsvp-contact .contact{
@@ -451,8 +451,10 @@ p.color span{
 /* Map Ruleset */
 section#map{ 
     overflow-x: scroll;
+    display: flex;
 }
 #map .map{ 
+    margin: 0 auto;
 }
 /* End of Map Ruleset */
 
@@ -461,18 +463,20 @@ section#map{
         height: 15vh;
         background-color: var(--footer-bg); 
         display: grid; 
-        grid-template-columns: 1fr 2.5fr 1fr; 
-        padding: 1em;
+        grid-template-columns: .8fr 3fr .2fr; 
+        padding: 0 .7em;
         color: rgba(157, 241, 237, 0.418);
-    }
+    } 
     footer a{
         text-decoration: none; 
-        letter-spacing: .1rem; 
-        color: rgba(157, 241, 237, 0.418);
-        font-weight: 600;
-    } 
+        letter-spacing: .1rem;  
+        font-weight: 600; 
+    }  
     footer p{
         font-size: .75rem; 
+    }
+    footer .emblem{ 
+        padding-top: 5px;
     }
     footer .emblem > div{  
         display: flex;
@@ -481,14 +485,18 @@ section#map{
         align-items: center;
     }
     footer .gift-heart{
-        height: 70%;
+        height: 65%; 
     }
     footer .powered{
-        height: 30%;
+        height: 25%; 
+    }
+    footer .powered a{ 
+        margin-left: .3rem;
+        color: var(--pri-color);
     }
     footer .gift-heart span:first-of-type img{
-        width: 60px;
-        height: 40px;
+        width: 50px;
+        height: 30px;
     }
     footer .gift-heart span:nth-of-type(2) img{
         width: 120px;
@@ -504,13 +512,13 @@ section#map{
         font-weight: bold;
         font-size: 1.1rem;
         letter-spacing: .2rem; 
-        padding: .2em 1em;
-        border-radius: 15px;
+        padding: .1em .8em;
+        border-radius: 20px;
         border: 1.5px solid #fff; 
 
-    }
+    } 
     footer .scrollup{
-        padding-left: 1em;
+        /* padding-left: 1em; */
         display: flex;
         justify-content: flex-end;
         align-items: center;
