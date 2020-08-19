@@ -410,6 +410,13 @@ section#wed-location .location-bottom::before{
     padding: .2em .7em;
     border-radius: 3px;
 }
+p.color{
+    margin-top: 1em; 
+}
+p.color span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .contact p:last-of-type{
     font-weight: bold;
 }
