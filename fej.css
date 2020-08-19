@@ -10,7 +10,7 @@
     box-sizing: border-box; 
 }
 html{
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Baloo Tamma 2', cursive;
     scroll-behavior: smooth;
 }
@@ -334,7 +334,8 @@ section#couple .loveadd{
         flex-direction: column;
         align-items: center;
         margin-bottom: 3em; 
-        padding:  0 2em;
+        padding:  0 2.5em;
+        text-align: center;
     }     
     section#wedding .wedding-bottom{
         justify-content: space-between;
