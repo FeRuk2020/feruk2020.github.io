@@ -403,7 +403,7 @@ section#wed-location .location-bottom::before{
 .location-bottom .rsvp-contact{ 
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 .rsvp-contact .contact{
