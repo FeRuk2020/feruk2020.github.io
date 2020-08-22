@@ -137,6 +137,9 @@ a{
         margin-bottom: 1em;
         font-size: 1.2rem; 
     } 
+    /* nav ul li.shift{
+
+    } */
     nav ul li:hover{  
         border-right: 5px solid #fff;
     }
