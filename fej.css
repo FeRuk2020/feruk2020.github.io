@@ -321,6 +321,20 @@ section#couple .loveadd{
         font-weight: bold;
     }
 
+    div.engagement{ 
+        background-color: var(--grey-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        text-align: center; 
+        color: rgba(0, 0, 0, 0.85);
+    }
+    .engagement h5{
+        margin-bottom: 1em;
+        padding: 0 11px;
+        font-size: 1.1rem;
+    }
+
     
 /* End Couple Ruleset */
 
