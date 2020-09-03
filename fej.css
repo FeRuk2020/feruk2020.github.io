@@ -322,6 +322,7 @@ section#couple .loveadd{
     }
 
     div.engagement{ 
+        margin-top: -25px;
         background-color: var(--grey-bg);
         display: flex;
         flex-direction: column;
@@ -331,8 +332,11 @@ section#couple .loveadd{
     }
     .engagement h5{
         margin-bottom: 1em;
-        padding: 0 11px;
+        padding: 0 15px; 
         font-size: 1.1rem;
+        font-weight: 300;
+        border-top: 2px solid var(--pri-color) ;
+        border-bottom: 2px solid var(--pri-color) ;
     }
 
     

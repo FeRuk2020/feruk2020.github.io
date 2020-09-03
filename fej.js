@@ -1,5 +1,5 @@
 function swipe(){
-    nav.classList.toggle('shift');
+    // nav.classList.toggle('shift');
     menu.classList.toggle('spin');
 }
 
@@ -10,11 +10,8 @@ function closeout(){
 //Allocate Variables
 var menu = document.querySelector('.menu'); 
 var nav = document.querySelector('.nav-list');
-var item = document.querySelectorAll('.nav-list li a'); 
-var sect = document.querySelectorAll('section');
+var item = document.querySelectorAll('.nav-list li a');  
 
 
-menu.onclick = function(){swipe();};  
-
-// nav = function (){closeout();};
+menu.onclick = function(){swipe();};   
 
